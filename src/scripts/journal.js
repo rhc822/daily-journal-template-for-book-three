@@ -1,3 +1,6 @@
+import API from "./data.js"
+import renderDOM from "./entriesDOM.js"
+import entryComponent from "./entryComponent.js"
 /*
     Main application logic that uses the functions and objects
     defined in the other JavaScript files.
@@ -6,4 +9,4 @@
     to get the data and display it.
 */
 API.getJournalEntries()
-.then(response => renderDom.renderJournalEntries(response))
+.then(response => renderDOM.renderJournalEntries(response))
