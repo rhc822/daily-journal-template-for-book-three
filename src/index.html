@@ -21,7 +21,7 @@
         <fieldset>
             <label for="concept-input">Concepts covered</label>
             <input id="conceptInput" type="text" name="concept-input" required>
-            <!-- pattern="[a-zA-Z0-9(){}:;]" -->
+            <!-- pattern="/[a-zA-z0-9\(\)\{\}\:\;]/" -->
         </fieldset>
         <fieldset>
             <label for="entry-input">Journal entry</label>
@@ -35,8 +35,9 @@
                 <option value="Ok">Ok</option>
             </select>
         </fieldset>
-        <button>Record Journal Entry</button>
     </form>
+
+    <button>Record Journal Entry</button>
 
     <article class="entryLog">
 
