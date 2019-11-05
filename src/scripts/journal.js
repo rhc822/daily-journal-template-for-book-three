@@ -33,3 +33,21 @@ document.querySelector("button").addEventListener("click", () => {
 
 //Provides the initial display of data to the DOM
 API.getJournalEntries().then(response => renderDOM.renderJournalEntries(response))
+
+/* 
+
+The section below cycles through the available buttons, adds event listeners to each, runs the function that gets all journal entries, and then filters the results by mood based on what which mood was clicked.
+
+*/
+
+let radioButtons = document.querySelectorAll("input[type='radio']")
+
+radioButtons.forEach(button => {
+    button.addEventListener("click", () => {
+    API.getJournalEntries()
+    .then(entries => {
+        const filteredEntry = entries.filter(entry => entry.mood === button.value)
+        renderDOM.renderJournalEntries(filteredEntry)
+    })
+  })
+})

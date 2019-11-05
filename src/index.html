@@ -28,15 +28,17 @@
             <textarea id="entryInput" name="entry-input"></textarea>
         </fieldset>
         <fieldset>
-            <label for="mood-input">Mood</label>
-            <select id="moodInput" class="mood" name="mood-input">
-                <option value="Amazing">Amazing</option>
-                <option value="Great">Great</option>
-                <option value="Ok">Ok</option>
+            <legend>Filter journal entries by mood</legend>
+                <input type="radio" id="inputRadioButtonAmazing" name="mood" value="Amazing">
+                <label for="inputRadioButtonAmazing">Amazing</label>
+                <input type="radio" id="inputRadioButtonGreat" name="mood" value="Great">
+                <label for="inputRadioButtonGreat">Great</label>
+                <input type="radio" id="inputRadioButtonOk" name="mood" value="Ok">
+                <label for="inputRadioButtonOk">Ok</label>
             </select>
         </fieldset>
     </form>
-
+<h2>test</h2>
     <button>Record Journal Entry</button>
 
     <article class="entryLog">

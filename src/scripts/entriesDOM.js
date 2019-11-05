@@ -1,10 +1,11 @@
+import entryManager from "./entryComponent.js";
+
 /*
     Purpose: To render all journal entries to the DOM
 
     Arguments: entries (array of objects)
 */
 
-import entryManager from "./entryComponent.js";
 
 const renderDom = {
   renderJournalEntries(entries) {
