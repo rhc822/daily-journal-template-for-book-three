@@ -1,5 +1,7 @@
 # Daily Journal Template for Book 3
 
+#LEFT OFF AT JOURNAL.JS FILE, LINES 55-59 TRYING TO ADD AN EVENT LISTENER TO THE DELETE BUTTONS AND CONSOLE LOG THE EVENT
+
 ## Setup
 
 1. Clone down this repo.
